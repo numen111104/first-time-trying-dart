@@ -18,4 +18,8 @@ void main () {
   Object makanan = {"Sate Bakar", integral, numType, doble};
   print(makanan);
 
+  var a;
+  a = 2;
+  print(a++);
+
 }

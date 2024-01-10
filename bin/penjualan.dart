@@ -89,4 +89,5 @@ dynamic cekBill(dynamic data, dynamic minuman, dynamic harga) {
       "BILLS\n"
       "Makanan: ${dataObjek['makanan']}\n"
       "Minuman: ${dataObjek['minuman']}\n";
+
 }

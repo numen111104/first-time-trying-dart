@@ -11,9 +11,11 @@ void main() {
   person.umur = 17;
   person.name = "Numenide";
 
+  var name = person.name;
+
   print(
       "Seorang anak berumur ${person.umur} mencoba melarikan diri dari ${person.address}"
-      " bernama ${person.name}");
+      " bernama $name");
 
   var firstName = 'Nide';
   final String? lastName;

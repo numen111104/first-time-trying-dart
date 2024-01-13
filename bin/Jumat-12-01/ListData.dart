@@ -5,9 +5,8 @@ Future<void> main() async {
   print(arrayDart);
   String a = arrayDart[0];
   print(a.substring(1, 2));
-
   addingArrayList(20);
-
+  setType();
 
 }
 
@@ -42,4 +41,16 @@ void delTwoIndex(List<int> arrayGanjil, List<int> arrayGenap) {
 
   print('List setelah dihapus 2 index genap: $finalGenap');
  print('List setelah dihapus 2 index ganjil: $finalGanjil');
+}
+
+// Set digunakan untuk menyimpan nilai unik, artinya tidak duplikat
+void setType() {
+  var persons = <String>{};
+  persons = {
+    "nide",
+    "manumane",
+    "nide", // Tidak boleh duplikat
+    "numen",
+  };
+  print(persons);
 }

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main(List<String> arguments) {
+void main() {
   var diskon = 0.1;
   List<Map<String, dynamic>> makanan = [
     {'nama': 'Nasi Padang', 'harga': 15000},

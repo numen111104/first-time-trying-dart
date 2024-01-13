@@ -52,5 +52,19 @@ void setType() {
     "nide", // Tidak boleh duplikat
     "numen",
   };
+  persons.remove('nide');
   print(persons);
 }
+
+/* Terdapat 3 cara mendeklarasi Set dan List
+langsung: var name = {'s', 'd', 's'};
+pakeTipeData: var name = <String> {s,s,s};
+kebawah: vae name = <int> {
+1,
+2,
+3,
+4
+}
+
+perbedaan mendasar adalah kalo set menerima data unik dan tidak menyediakan index
+ */

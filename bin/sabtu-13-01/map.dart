@@ -9,15 +9,23 @@ void main() {
   ];
 
   var cara2 =  [{false : true},{"malan" : "malan"}];
+  
+  Symbol simbol1 = Symbol("Eko");
+  var simbol2 = #belajar;
+
+  // ada 2 cara mendeklarasikan simbol, pake # atau Symbol
 
   
   print(listMap[0][1]);
+
+
   var map2 = {
     4 : 'nasyar',
     5 : 'miqdad',
     6 : 'munir'
   };
 
+  map2[7] = "setan";
   var map3 = <num, dynamic>{
     1: 'w'
   };

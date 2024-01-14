@@ -53,8 +53,10 @@ void main() {
     1: "nide",
     2: "makan"
   }];
-
-  for(var key in listMap.key) {
-    print(key);
+  for (var map in listMap){
+    for (var key in map.keys) {
+      var value = map[key];
+      print('Key = $key Value = $value');
+    }
   }
 }

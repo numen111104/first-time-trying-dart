@@ -1,10 +1,10 @@
+import '../Jumat-12-01/ListData.dart';
 int timesTwo(int x) {
   return x * 2;
 }
-
 // arrow
 int timesSix(int x) => timesTwo(x * 6);
-
+//High Order Function
 int runTwice(int x, int I, int Function(int) f) {
   for (var i = 0; i < I; i++) {
     x = f(x);
@@ -16,8 +16,9 @@ void main() {
   print(runTwice(6, 8, timesTwo));
   // saat dipanggil parameter nya harus di panggil juga salah satu atau kedua-duanya
   name(firstName: "Makaroni");
-  name2(angka1: 9, angka2: 2
-  );
+  name2(angka1: 9, angka2: 2);
+  
+  print(filterName("Anjing", filterBadWord));
 
   List<int> data = [1,2,3,4,5,6,3,2,4,4,5];
   print(sumArray(data));
@@ -42,3 +43,11 @@ int sumArray(List<int> data) {
   }
   return total;
 }
+
+//HIGHER ORDER FUNCTION
+String filterName( String name, String Function(String) filter) {
+var filteredName = filter(name);
+return filteredName;
+}
+
+String filterBadWord(String name) => name == "Anjing" ? "*****" : name;
